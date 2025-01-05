@@ -42,7 +42,7 @@ st.set_page_config(
         page_title='IMDB Movie Review Sentiment Analysis',           
         )
 
-st.title('Sentiment Analysis of IMDB Movie Reviews - Streamlit App')
+st.title('Sentiment Analysis of IMDB Movie Reviews - Simple recurrent neural network')
 st.write('Explore the power of sentiment analysis with my interactive Streamlit app! Enter any movie review to classify it as positive or negative using a simple recurrent neural network model I created using Tensorflow .')
 
 # User input
