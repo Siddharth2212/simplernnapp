@@ -1,3 +1,12 @@
+# IMDB Movie Review Sentiment Analysis App
+# Author: Your Name
+# Description: A Streamlit application that allows users to input movie reviews 
+# and classifies them as positive or negative using a pre-trained sentiment analysis model.
+# Meta Title: Sentiment Analysis of IMDB Movie Reviews - Streamlit App
+# Meta Description: Explore the power of sentiment analysis with our interactive Streamlit app! 
+# Enter any movie review to classify it as positive or negative using a pre-trained model.
+# Meta Keywords: Sentiment Analysis, IMDB Reviews, Movie Review Classification, Streamlit App, Natural Language Processing, Machine Learning, Text Analysis
+
 # Step 1: Import Libraries and Load the Model
 import numpy as np
 import tensorflow as tf
@@ -28,8 +37,13 @@ def preprocess_text(text):
 import streamlit as st
 ## streamlit app
 # Streamlit app
-st.title('IMDB Movie Review Sentiment Analysis')
-st.write('Enter a movie review to classify it as positive or negative.')
+
+st.set_page_config(
+        page_title='IMDB Movie Review Sentiment Analysis',           
+        )
+
+st.title('Sentiment Analysis of IMDB Movie Reviews - Streamlit App')
+st.write('Explore the power of sentiment analysis with my interactive Streamlit app! Enter any movie review to classify it as positive or negative using a simple recurrent neural network model I created using Tensorflow .')
 
 # User input
 user_input = st.text_area('Movie Review')
